@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução à Programação</title>
+    <style>
+        body{
+            font: normal 12pt Arial;
+            line-height: 22pt ;
+            
+        }
+    </style>
 </head>
 <body>
     <h1>Operações</h1>
-    <p id="res">Resultados</p>
+    <p id="res">
+        
+    </p>
 
     <script>
-        var res = document.getElementById('res')
-        var a = 4
-        var b = 2
-      var soma = a+b
-      var dif = a-b
-      var mul = a*b
-      var div = a/b
-      var exp = a**b
+    var res = document.getElementById('res')
+    var a = 4
+    var b = 2
+    var soma = a+b
+    var dif = a-b
+    var mul = a*b
+    var div = a/b
+    var exp = a**b
 
-      res.innerHTML+= `O resultado da soma é: ${soma}`
-      res.innerHTML= 'O resultado da diferença é:' +soma
+      res.innerHTML+= ` Os resultados são: <br>
+      Soma: ${soma}<br>
+      Diferença: ${dif}<br>
+      Multiplicação: ${mul} <br>
+      Divisão: ${div}<br>
+      Exponenciação: ${exp}`
+
+      
     </script>
 </body>
 </html>
