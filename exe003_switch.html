@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Programação</title>
+</head>
+<body>
+    <h1>Par e Impar</h1>
+<div>
+    <label>Digite um número:</label>
+    <input type="number" id="num">
+<br><br>
+
+    <button type="button" id="btn" onclick="clicar()">Clicar</button>
+
+    <p id="res"></p>
+</div>
+   
+    <script>
+        function clicar(){
+            var num = Number(document.getElementById('num').value)
+        
+            var res = document.getElementById('res')
+            var resto = num % 2
+        
+            switch(resto){
+            case 0:
+                res.innerHTML=`O número ${num} é PAR`
+            break
+            case 1:
+                res.innerHTML=`O número ${num} é IMPAR`
+            break
+            default:
+                res.innerHTML= `Número inválido`
+                break
+           }
+        }
+
+    
+
+
+    </script>
+</body>
+</html>
