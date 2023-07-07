@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Programação</title>
+</head>
+<body>
+    <h1>Loop While</h1>
+
+    <div id="corpo">
+
+        <label>Digite um número:</label>  <input type="number" id="num">
+        <br><br>
+        <button id="btn" onclick="clicar()">Clique</button>
+
+        <p id="res"> Clique no botão para ver o resultado.</p>
+    </div>
+
+    <script>
+        function clicar(){
+        var num = Number(document.getElementById('num').value)
+        var res = document.getElementById('res')
+       
+        num = 0
+        
+        while(num <10){
+           
+        res.innerHTML= `${num}`
+        num++
+        }
+            
+    }
+    
+    </script>
+</body>
+</html>
