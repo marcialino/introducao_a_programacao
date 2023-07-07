@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Programação</title>
+</head>
+<body onload="carregado()">
+    <button onclick="fuiClicado()">Eu sou um botão</button> <br><br>
+
+    <button onmouseover="mouseEmCima()" onmouseout="mouseFora()">Eu sou outro botão</button><br><br>
+
+    <input type="text" onkeydown="tecladoUsado()" placeholder="Eu sou um texbox: D">
+    <br><br>
+
+    <input type="text" placeholder="Digita em mim" onchange="mudanca()">
+    
+    <br><br>
+
+    <input type="text" placeholder="Digita em mim também">
+
+    <script>
+        function carregado() {
+            alert('A página já está carregada')
+         }
+
+         function fuiClicado() {
+            alert('Clicaram em mim')
+
+           }    
+           function mouseEmCima(){
+            alert('Tem um mouse em mim!')
+           }
+           function mouseFora(){ 
+            alert('Ufa! Ele já saiu')
+            }
+
+            function tecladoUsado() { 
+                alert('Não digite em mim. Não gosto de letras. Tente digitar na caixa de texto vizinha.')
+            }
+
+            function mudanca() {
+                alert('Não me abandone!')
+              }
+           </script>
+    
+</body>
+</html>
