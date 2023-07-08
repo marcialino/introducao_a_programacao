@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Programação</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <button id="btn">Clique em mim</button>
+    <div id="texto">Eu amo BioInformática</div>
+
+
+
+    <script>
+        $('#btn').click(()=>{
+            $('#texto').css('color','blue')
+            $('#texto').css('text-decoration','underline')
+            $('#texto').css('letter-spacing','5pt')
+            $('#texto').css('padding','15')
+            $('#texto').css('background-color','#ccc')
+            $('#texto').css('font-size','25pt')
+        })
+    </script>
+    
+</body>
+</html>
