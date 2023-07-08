@@ -9,8 +9,15 @@
 </head>
 <body>
     <div id="div1"></div>
+    <p id="res"></p>
+    <p id="res1"></p>
     <script>
-        $('#div1').text('Hello world, jQuery')
+        $('#div1').text('Hello world, jQuery!')
+
+        var res= document.getElementById('res')
+        res.innerHTML='Estou agora, em JS!'
+
+        document.getElementById('res1').innerHTML = 'Outra maneira de desenvolver em JS!'
     </script>
 </body>
 </html>
